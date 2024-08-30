@@ -1,0 +1,101 @@
+user
+
+{
+    "UserName" : "testShopkeeper",
+    "Email" : "Shopkeeper@test.com",
+    "Password" : "shop@pass",
+    "Role" : "shopkeeper"
+}
+
+shop 
+
+{
+    "shopName": "SampleShop",
+    "address": "123 Sample Address",
+    "longitude": 91.562130,
+    "latitude": 26.081950
+}
+
+
+shopItem 
+
+{
+    "quantity": 5,
+    "price": 2,
+    "itemId": "65f95bce3dde2c8a769bf0f4" 
+}
+
+shopNearBy 
+
+{
+    "longitude": 91.562130,
+    "latitude": 26.081950
+}
+
+onTappingShop 
+
+{
+    "shopId" : "65fa06654bcab88c654c8447"
+}
+
+searchProducts 
+
+{
+    "itemName": "Fresh"
+}
+
+manual Update
+{
+    "itemName": "Peaches",
+    "description": "Fresh, crunchy peaches sourced from local orchards.",
+    "price": 2.19,
+    "netWeight": 1.5,
+    "unit": "kg",
+    "category": "Fruits",
+    "quantity": 70
+}
+
+createOrder
+
+{
+    "shopId" :"65fa06654bcab88c654c8447",
+    "location": {
+        "coordinates": [91.565728, 26.082592]
+    },
+    "items": [
+        {
+            "itemId": "65f95bce3dde2c8a769bf0f4",
+            "price": 2,  
+            "quantity": 9 
+        }
+    ]
+
+}
+
+allOrderShopkeeper
+
+http://localhost:8000/allOrderShopkeeper?status=pending
+
+autoupdate
+{
+    "price" :3,
+    "quantity" :20,
+    "itemId" :"65f95bce3dde2c8a769bf0f6"
+}
+
+manualUpdate with an Image 
+{
+    "itemName": "Applesss",
+    "description": "Fresh red apples",
+    "price": 2.5,
+    "netWeight": 500,
+    "unit": "g",
+    "category": "Fruits",
+    "quantity": 10,
+    "path": "/Users/shivamdwivedi/Desktop/Academics/College/6th Sem/Software Enginnering/IndiConnect/Backend/Authentication/parleG.jpeg",
+    "originalname": "parleG.jpeg"
+}
+
+
+
+
